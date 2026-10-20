@@ -8,7 +8,7 @@ export const pt: Dict = {
     description:
       'Engenheiro de software .NET que liga TI ao chão de fábrica: C#, WPF, SQL Server, visão industrial e integração de PLCs.',
   },
-  nav: { about: 'Sobre', experience: 'Experiência', skills: 'Competências', education: 'Formação', projects: 'Projetos', contact: 'Contacto', menu: 'Menu', switchLabel: 'English', switchAria: 'Switch to English' },
+  nav: { about: 'Sobre', experience: 'Experiência', skills: 'Competências', education: 'Formação', certificates: 'Certificados', projects: 'Projetos', contact: 'Contacto', menu: 'Menu', switchLabel: 'English', switchAria: 'Switch to English' },
   hero: {
     greeting: 'Olá, sou o',
     role: 'Engenheiro de Automação e Software',
@@ -46,13 +46,19 @@ export const pt: Dict = {
         period: 'Set 2024 – Out 2025',
         video: '/media/video_ergonomia.mp4',
         bullets: [
-          'Criei ferramentas Python para processamento de questionários e análise estatística.',
-          'Desenvolvi um sistema de análise ergonómica de postura em tempo real em Python, com câmara estéreo ZED 2i e body tracking do ZED SDK (esqueleto de 18 pontos, tracking multi-pessoa).',
-          'Implementei algoritmos de postura a partir de keypoints 3D: inclinação, flexão lateral e rotação axial do tronco, inclinação da cabeça, posição dos braços (cotovelo acima do ombro) e deteção sentado/em pé, com limiares configuráveis.',
-          'Criei relatórios automáticos: dados da sessão guardados em JSON e convertidos em relatórios PDF com estatísticas de sentado/em pé e gráficos de postura ao longo do tempo (matplotlib, ReportLab).',
-          'Adicionei um visualizador em tempo real (OpenCV/OpenGL) com indicação de má postura e gravação de vídeo da sessão.',
-          'Implementei um algoritmo de anonimização (pixelização da pessoa detetada) no sistema de ergonomia para proteger a privacidade e os dados dos trabalhadores.',
+          'Desenvolvi um sistema de análise ergonómica de postura em tempo real em Python, com câmara estéreo ZED 2i e body tracking do ZED SDK, avaliando a postura do tronco, cabeça e braços e o estado sentado/em pé a partir de keypoints 3D.',
+          'Automatizei relatórios PDF/JSON com estatísticas e gráficos de postura, um visualizador em tempo real com indicação de má postura e um algoritmo de anonimização para proteger a privacidade e os dados dos trabalhadores.',
           'Desenvolvi um programa para um robot colaborativo Universal Robots UR5 para demonstrar a colaboração entre humanos e robots no mesmo espaço.',
+          'Criei ferramentas Python para processamento de questionários e análise estatística.',
+        ],
+      },
+      {
+        role: 'Gestor de Parcerias',
+        company: 'Erasmus Student Network Porto',
+        period: 'Set 2024 – Out 2025',
+        bullets: [
+          'Utilização diária do inglês na comunicação com estudantes internacionais e parceiros.',
+          'Expandi a rede de parceiros da organização, garantindo 16 parcerias comerciais e 3 de alojamento e atingindo 47% da meta anual de financiamento em seis meses.',
         ],
       },
       {
@@ -63,20 +69,9 @@ export const pt: Dict = {
         imageHover: 'HMI desenvolvida por mim',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
-          'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
-          'Instrumentação e aquisição de sinal: projetei um sistema de aquisição de dados com sensores óticos, extensómetros, sensores de pressão, amplificadores de sinal e hardware de medição de alta velocidade.',
-          'Desenvolvimento de software industrial: desenvolvi uma aplicação LabVIEW para aquisição de dados em tempo real, processamento de sinal, monitorização de ensaios, visualização automática de resultados e exportação CSV/Excel.',
-          'Diagnóstico e otimização do sistema: investiguei discrepâncias entre simulações teóricas e resultados experimentais, implementando modificações de hardware e avaliando o desempenho através de ensaios.',
-          'Calibração e validação: calibrei o sistema de medição e validei os resultados do software face às medições experimentais, garantindo resultados fiáveis e consistentes.',
-        ],
-      },
-      {
-        role: 'Gestor de Parcerias',
-        company: 'Erasmus Student Network Porto',
-        period: 'Set 2023 – Out 2025',
-        bullets: [
-          'Utilização diária do inglês na comunicação com estudantes internacionais e parceiros.',
-          'Expandi a rede de parceiros da organização, garantindo 16 parcerias comerciais e 3 de alojamento e atingindo 47% da meta anual de financiamento em seis meses.',
+          'Eletropneumática e instrumentação: modifiquei circuitos elétricos e pneumáticos e projetei um sistema de aquisição de dados (sensores óticos, extensómetros, sensores de pressão, amplificadores, hardware de alta velocidade) para melhorar o desempenho dos atuadores e a repetibilidade dos ensaios.',
+          'Desenvolvi uma aplicação LabVIEW para aquisição de dados em tempo real, processamento de sinal, monitorização de ensaios, visualização automática de resultados e exportação CSV/Excel.',
+          'Diagnóstico e validação: investiguei discrepâncias entre simulações e resultados experimentais, implementei modificações de hardware e calibrei e validei o sistema e os resultados do software.',
         ],
       },
       {
@@ -115,10 +110,10 @@ export const pt: Dict = {
     badges: { public: 'Projeto público', private: 'Projeto privado', fork: 'Projeto privado / fork', academic: 'Projeto académico' },
     privateNote: 'Detalhes públicos limitados.',
     items: {
-      nzwalks: 'Rascunho: API Web ASP.NET Core e front-end web para consultar e gerir trilhos pedestres da Nova Zelândia (regiões, dificuldades, percursos). Feito com C#, Entity Framework e SQL Server, numa arquitetura em camadas (controllers, repositórios, DTOs com AutoMapper) e autenticação JWT. Objetivo: praticar a construção de uma API REST limpa e segura de ponta a ponta.',
-      flip7: 'Rascunho: Versão web multijogador em tempo real do jogo de cartas Flip 7, alojada na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Objetivo: jogar online com amigos e explorar arquitetura multijogador em tempo real. Código-fonte privado.',
-      addim: 'Rascunho: Fork privado do website da Addim, front-end em TypeScript/SCSS. Usado para estudar e personalizar uma base de código real (componentes, estilos, build). Objetivo: aprender com a estrutura de um projeto real e contribuir com melhorias.',
-      pickplace: 'Rascunho: Sistema de pick and place em ambiente simulado, com Factory IO ligado a um PLC Siemens. Programado no TIA Portal em Structured Text, com a sequência de controlo desenhada em GRAFCET. Objetivo: validar a lógica de automação de uma célula de pick and place em simulação antes de passar a hardware real.',
+      nzwalks: 'API Web ASP.NET Core e front-end web para consultar e gerir trilhos pedestres da Nova Zelândia (regiões, dificuldades, percursos). Feito com C#, Entity Framework e SQL Server, numa arquitetura em camadas (controllers, repositórios, DTOs com AutoMapper) e autenticação JWT. Objetivo: praticar a construção de uma API REST limpa e segura de ponta a ponta.',
+      flip7: 'Versão web multijogador em tempo real do jogo de cartas Flip 7, alojada na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Objetivo: jogar online com amigos e explorar arquitetura multijogador em tempo real. Código-fonte privado.',
+      addim: "Website para uma ONG portuguesa, que decidi desenvolver por iniciativa própria. Front-end em TypeScript/SCSS, publicado em addim.pt.",
+      pickplace: 'Sistema de pick and place em ambiente simulado, com Factory IO ligado a um PLC Siemens. Programado no TIA Portal em Structured Text, com a sequência de controlo desenhada em GRAFCET. Objetivo: validar a lógica de automação de uma célula de pick and place em simulação antes de passar a hardware real.',
     },
   },
   printing: {
@@ -131,7 +126,6 @@ export const pt: Dict = {
     title: 'Contacto',
     text: 'Aberto a novas oportunidades. Vamos falar.',
     email: 'Email',
-    phone: 'Telefone',
     linkedin: 'LinkedIn',
     github: 'GitHub',
   },

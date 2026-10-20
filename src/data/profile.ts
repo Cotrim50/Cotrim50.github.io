@@ -1,7 +1,6 @@
 // Language-independent facts. Translatable text lives in ./i18n/*.ts
 export const profile = {
   name: 'José Cotrim',
-  phone: '+351 960 251 458',
   email: 'cotrim.ze@gmail.com',
   linkedin: 'https://linkedin.com/in/jose-cotrim',
   github: 'https://github.com/Cotrim50',
@@ -10,10 +9,10 @@ export const profile = {
 };
 
 export const skills: Record<string, string[]> = {
-  software: ['C#', '.NET', 'REST APIs', 'MVVM', 'Entity Framework', 'SQL Server', 'Python'],
+  software: ['C#', '.NET', 'ASP.NET Core', 'Angular', 'REST APIs', 'MVVM', 'Entity Framework', 'SQL Server', 'Python'],
   desktop: ['WPF', 'WinUI', 'WinForms'],
-  devops: ['Azure DevOps', 'Git', 'CI/CD', 'Agile', 'NuGet'],
-  automation: ['TwinCAT 3', 'Codesys', 'ST / FBD / Ladder', 'Siemens TIA Portal', 'LabVIEW', 'MQTT'],
+  devops: ['Azure DevOps', 'Git', 'CI/CD', 'Agile', 'NuGet', 'Docker', 'TDD'],
+  automation: ['TwinCAT 3', 'Codesys', 'ST / FBD / Ladder', 'Siemens TIA Portal', 'LabVIEW', 'MVTec Halcon', 'TwinSAFE', 'CAN', 'MQTT'],
 };
 
 export const projects = [
@@ -35,7 +34,7 @@ export const projects = [
     id: 'addim',
     repo: undefined as string | undefined,
     link: 'https://addim.pt' as string | undefined,
-    visibility: 'fork',
+    visibility: 'private',
     tags: ['TypeScript', 'SCSS', 'CSS', 'JavaScript'],
   },
   {
@@ -53,7 +52,6 @@ export const certificates: { title: string; issuer: string; year: string; file?:
   { title: 'Build ASP.NET Core Web API – Scratch To Finish (.NET 8)', issuer: 'Udemy', year: '2026', file: '/certificates/ASP.NET.pdf' },
   { title: 'Docker for .NET Developer – Getting Started', issuer: 'Udemy', year: '2026', file: '/certificates/Docker%20.Net.pdf' },
   { title: 'Test Driven Development in ASP.NET Core', issuer: 'Udemy', year: '2026', file: '/certificates/Test%20Driven%20Development.pdf' },
-  { title: 'Unified Diagnostic Services (UDS)', issuer: 'Udemy', year: '2026', file: '/certificates/UDS.pdf' },
   { title: 'Master CAN protocol from Scratch (CAN + CAN-FD)', issuer: 'Udemy', year: '2026', file: '/certificates/CAN.pdf' },
 ];
 

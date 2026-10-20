@@ -5,7 +5,6 @@ interface Props { t: Dict }
 const { t } = Astro.props;
 const items = [
   [t.contact.email, profile.email, `mailto:${profile.email}`],
-  [t.contact.phone, profile.phone, `tel:${profile.phone.replace(/\s/g, '')}`],
   [t.contact.linkedin, 'jose-cotrim', profile.linkedin],
   [t.contact.github, 'Cotrim50', profile.github],
 ];
