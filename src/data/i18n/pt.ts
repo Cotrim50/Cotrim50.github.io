@@ -57,6 +57,7 @@ export const pt: Dict = {
         company: 'INEGI',
         period: 'Fev 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
+        imageHover: 'HMI desenvolvida por mim',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
@@ -69,7 +70,7 @@ export const pt: Dict = {
       {
         role: 'Gestor de Parcerias',
         company: 'Erasmus Student Network Porto',
-        period: 'Set 2023 – Presente',
+        period: 'Set 2023 – Out 2025',
         bullets: [
           'Utilização diária do inglês na comunicação com estudantes internacionais e parceiros.',
           'Expandi a rede de parceiros da organização, garantindo 16 parcerias comerciais e 3 de alojamento e atingindo 47% da meta anual de financiamento em seis meses.',

@@ -55,6 +55,7 @@ export const en = {
         company: 'INEGI',
         period: 'Feb 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
+        imageHover: 'Developed HMI',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Electro-pneumatic system integration: analysed and modified electrical and pneumatic circuits to improve actuator performance, controllability and test repeatability.',
@@ -67,7 +68,7 @@ export const en = {
       {
         role: 'Partnerships Manager',
         company: 'Erasmus Student Network Porto',
-        period: 'Sep 2023 – Present',
+        period: 'Sep 2023 – Oct 2025',
         bullets: [
           'Daily use of English for communication with both international students and partners.',
           'Expanded the organization’s partner network, securing 16 commercial and 3 housing partnerships and achieving 47% of the annual funding target in six months.',
