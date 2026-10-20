@@ -34,7 +34,7 @@ export const projects = [
   {
     id: 'addim',
     repo: undefined as string | undefined,
-    link: undefined as string | undefined,
+    link: 'https://addim.pt' as string | undefined,
     visibility: 'fork',
     tags: ['TypeScript', 'SCSS', 'CSS', 'JavaScript'],
   },

@@ -17,11 +17,11 @@ const images = fs.existsSync(dir)
     <p class="mb-6 max-w-3xl text-muted">{t.printing.text}</p>
     <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3">
       {images.map((f) => (
-        <li class="overflow-hidden rounded-xl border border-line bg-surface/70">
+        <li class="group relative overflow-hidden rounded-xl border border-line">
           <a href={`/3d/${encodeURIComponent(f)}`} target="_blank" rel="noopener noreferrer">
             <img src={`/3d/${encodeURIComponent(f)}`} alt={caption(f)} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
           </a>
-          <p class="px-3 py-2 text-center text-sm text-muted">{caption(f)}</p>
+          <p class="pointer-events-none absolute inset-0 flex items-center justify-center bg-bg/75 p-3 text-center font-semibold text-ink opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">{caption(f)}</p>
         </li>
       ))}
     </ul>

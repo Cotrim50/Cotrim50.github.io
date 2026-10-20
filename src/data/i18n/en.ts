@@ -53,7 +53,9 @@ export const en = {
       {
         role: 'Master Thesis',
         company: 'INEGI',
-        period: '2024',
+        period: 'Feb 2024 – Jun 2024',
+        image: '/media/thesis-labview.png',
+        imageCaption: 'LabVIEW interface I built for the thesis :D',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Electro-pneumatic system integration: analysed and modified electrical and pneumatic circuits to improve actuator performance, controllability and test repeatability.',
