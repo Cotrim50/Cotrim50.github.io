@@ -46,7 +46,10 @@ export const en = {
         period: 'Sep 2024 – Oct 2025',
         bullets: [
           'Built Python tools for questionnaire processing and statistical analysis.',
-          'Developed AI-based body tracking using ZED 2i for posture and object detection.',
+          'Developed a real-time ergonomic posture analysis system in Python using a ZED 2i stereo camera and the ZED SDK body tracking (18-keypoint skeleton, multi-person tracking).',
+          'Implemented posture algorithms from 3D keypoints: trunk inclination, lateral flexion and axial rotation, head tilt, arm position (elbow above shoulder) and sitting/standing detection, with configurable thresholds.',
+          'Built automatic reporting: session data stored as JSON and converted into PDF reports with sitting/standing statistics and posture charts over time (matplotlib, ReportLab).',
+          'Added an OpenCV/OpenGL live viewer with posture overlays and session video recording.',
         ],
       },
       {

@@ -48,7 +48,10 @@ export const pt: Dict = {
         period: 'Set 2024 – Out 2025',
         bullets: [
           'Criei ferramentas Python para processamento de questionários e análise estatística.',
-          'Desenvolvi tracking corporal com IA usando ZED 2i para deteção de postura e objetos.',
+          'Desenvolvi um sistema de análise ergonómica de postura em tempo real em Python, com câmara estéreo ZED 2i e body tracking do ZED SDK (esqueleto de 18 pontos, tracking multi-pessoa).',
+          'Implementei algoritmos de postura a partir de keypoints 3D: inclinação, flexão lateral e rotação axial do tronco, inclinação da cabeça, posição dos braços (cotovelo acima do ombro) e deteção sentado/em pé, com limiares configuráveis.',
+          'Criei relatórios automáticos: dados da sessão guardados em JSON e convertidos em relatórios PDF com estatísticas de sentado/em pé e gráficos de postura ao longo do tempo (matplotlib, ReportLab).',
+          'Adicionei um visualizador em tempo real (OpenCV/OpenGL) com indicação de má postura e gravação de vídeo da sessão.',
         ],
       },
       {
