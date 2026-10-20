@@ -84,7 +84,7 @@ export const en = {
   },
   printing: {
     title: '3D Printing',
-    text: "My hobby: designing and printing 3D objects.",
+    text: "My hobby: designing and printing 3D objects. Some I sell, other I keep for myself.",
     alt: '3D printed object',
     instagram: 'See more on Instagram',
   },
