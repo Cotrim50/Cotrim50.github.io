@@ -38,6 +38,13 @@ export const projects = [
     visibility: 'fork',
     tags: ['TypeScript', 'SCSS', 'CSS', 'JavaScript'],
   },
+  {
+    id: 'pickplace',
+    repo: undefined as string | undefined,
+    link: undefined as string | undefined,
+    visibility: 'academic',
+    tags: ['Factory IO', 'Siemens', 'TIA Portal', 'Structured Text', 'GRAFCET'],
+  },
 ];
 
 // Certificates: put PDFs in public/certificates/ and add entries here.

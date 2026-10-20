@@ -3,7 +3,7 @@ import type { Dict } from '../data/i18n/en';
 import { projects } from '../data/profile';
 interface Props { t: Dict; project: (typeof projects)[number] }
 const { t, project } = Astro.props;
-const name = { nzwalks: 'NZWalks', flip7: 'flip7-multiplayer', addim: 'addim' }[project.id];
+const name = { nzwalks: 'NZWalks', flip7: 'flip7-multiplayer', addim: 'addim', pickplace: 'Pick & Place (Factory IO)' }[project.id];
 const badge = t.projects.badges[project.visibility as keyof typeof t.projects.badges];
 const desc = t.projects.items[project.id as keyof typeof t.projects.items];
 ---
@@ -11,7 +11,7 @@ const desc = t.projects.items[project.id as keyof typeof t.projects.items];
   <span class="mb-2 self-start font-mono text-xs text-accent2">{badge}</span>
   <h3 class="text-lg font-semibold">{name}</h3>
   <p class="mt-2 flex-1 text-sm text-muted">{desc}</p>
-  {project.visibility !== 'public' && <p class="mt-2 text-xs italic text-muted">{t.projects.privateNote}</p>}
+  {(project.visibility === 'private' || project.visibility === 'fork') && <p class="mt-2 text-xs italic text-muted">{t.projects.privateNote}</p>}
   <ul class="mt-4 flex flex-wrap gap-2">{project.tags.map((tag) => <li class="pill">{tag}</li>)}</ul>
   <div class="mt-4 flex flex-wrap gap-4 text-sm">
     {project.repo && <a class="text-accent hover:underline" href={project.repo} target="_blank" rel="noopener noreferrer">{t.projects.repo} ↗</a>}

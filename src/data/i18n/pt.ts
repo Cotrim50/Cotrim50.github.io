@@ -114,12 +114,13 @@ export const pt: Dict = {
     title: 'Projetos',
     repo: 'Ver repositório',
     live: 'Visitar site',
-    badges: { public: 'Projeto público', private: 'Projeto privado', fork: 'Projeto privado / fork' },
+    badges: { public: 'Projeto público', private: 'Projeto privado', fork: 'Projeto privado / fork', academic: 'Projeto académico' },
     privateNote: 'Detalhes públicos limitados.',
     items: {
       nzwalks: 'Rascunho: API Web ASP.NET Core e front-end web para consultar e gerir trilhos pedestres da Nova Zelândia (regiões, dificuldades, percursos). Feito com C#, Entity Framework e SQL Server, numa arquitetura em camadas (controllers, repositórios, DTOs com AutoMapper) e autenticação JWT. Objetivo: praticar a construção de uma API REST limpa e segura de ponta a ponta.',
       flip7: 'Rascunho: Versão web multijogador em tempo real do jogo de cartas Flip 7, alojada na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Objetivo: jogar online com amigos e explorar arquitetura multijogador em tempo real. Código-fonte privado.',
       addim: 'Rascunho: Fork privado do website da Addim, front-end em TypeScript/SCSS. Usado para estudar e personalizar uma base de código real (componentes, estilos, build). Objetivo: aprender com a estrutura de um projeto real e contribuir com melhorias.',
+      pickplace: 'Rascunho: Sistema de pick and place em ambiente simulado, com Factory IO ligado a um PLC Siemens. Programado no TIA Portal em Structured Text, com a sequência de controlo desenhada em GRAFCET. Objetivo: validar a lógica de automação de uma célula de pick and place em simulação antes de passar a hardware real.',
     },
   },
   printing: {
