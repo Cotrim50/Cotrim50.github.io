@@ -2,10 +2,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { Dict } from '../data/i18n/en';
-import { profile } from '../data/profile';
+import { profile, printCaptions } from '../data/profile';
 interface Props { t: Dict }
 const { t } = Astro.props;
 const dir = path.join(process.cwd(), 'public', '3d');
+const caption = (f: string) => printCaptions[f]?.[t.lang as 'en' | 'pt'] ?? f.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ');
 const images = fs.existsSync(dir)
   ? fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp|gif|jfif|avif)$/i.test(f)).sort()
   : [];
@@ -16,10 +17,11 @@ const images = fs.existsSync(dir)
     <p class="mb-6 max-w-3xl text-muted">{t.printing.text}</p>
     <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3">
       {images.map((f) => (
-        <li class="overflow-hidden rounded-xl border border-line">
+        <li class="overflow-hidden rounded-xl border border-line bg-surface/70">
           <a href={`/3d/${encodeURIComponent(f)}`} target="_blank" rel="noopener noreferrer">
-            <img src={`/3d/${encodeURIComponent(f)}`} alt={t.printing.alt} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
+            <img src={`/3d/${encodeURIComponent(f)}`} alt={caption(f)} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
           </a>
+          <p class="px-3 py-2 text-center text-sm text-muted">{caption(f)}</p>
         </li>
       ))}
     </ul>

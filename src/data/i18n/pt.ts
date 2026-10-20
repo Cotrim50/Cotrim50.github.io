@@ -52,6 +52,28 @@ export const pt: Dict = {
           'Desenvolvi tracking corporal com IA usando ZED 2i para deteção de postura e objetos.',
         ],
       },
+      {
+        role: 'Investigador de Tese de Mestrado',
+        company: 'INEGI',
+        period: '2024',
+        title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
+        bullets: [
+          'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
+          'Instrumentação e aquisição de sinal: projetei um sistema de aquisição de dados com sensores óticos, extensómetros, sensores de pressão, amplificadores de sinal e hardware de medição de alta velocidade.',
+          'Desenvolvimento de software industrial: desenvolvi uma aplicação LabVIEW para aquisição de dados em tempo real, processamento de sinal, monitorização de ensaios, visualização automática de resultados e exportação CSV/Excel.',
+          'Diagnóstico e otimização do sistema: investiguei discrepâncias entre simulações teóricas e resultados experimentais, implementando modificações de hardware e avaliando o desempenho através de ensaios.',
+          'Calibração e validação: calibrei o sistema de medição e validei os resultados do software face às medições experimentais, garantindo resultados fiáveis e consistentes.',
+        ],
+      },
+      {
+        role: 'Estagiário de Verão em Automação',
+        company: 'Estágio de Verão',
+        period: 'Verão 2022',
+        bullets: [
+          'Programei PLCs em Ladder, FBD e Structured Text (IEC 61131-3) com CODESYS.',
+          'Implementei um protocolo de comunicação série num SoftPLC da Advantech, para troca de dados com dispositivos externos.',
+        ],
+      },
     ],
   },
   skills: {

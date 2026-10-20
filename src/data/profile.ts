@@ -49,3 +49,13 @@ export const certificates: { title: string; issuer: string; year: string; file?:
   { title: 'Unified Diagnostic Services (UDS)', issuer: 'Udemy', year: '2026', file: '/certificates/UDS.pdf' },
   { title: 'Master CAN protocol from Scratch (CAN + CAN-FD)', issuer: 'Udemy', year: '2026', file: '/certificates/CAN.pdf' },
 ];
+
+// Captions for public/3d images (key = file name). Missing ones fall back to the file name.
+export const printCaptions: Record<string, { en: string; pt: string }> = {
+  'Avengers_lamp_3d.png': { en: 'Avengers lamp', pt: 'Candeeiro Avengers' },
+  'Avengers_lamp_3d_1.png': { en: 'Avengers lamp', pt: 'Candeeiro Avengers' },
+  'Charmander_Pokeball_3d.png': { en: 'Charmander Pokéball', pt: 'Pokébola do Charmander' },
+  'F1_Calendar_Keychains_3d.jpeg': { en: 'F1 calendar keychains', pt: 'Porta-chaves calendário F1' },
+  'Nametag_dog_3d.png': { en: 'Dog nametag', pt: 'Placa de identificação para cão' },
+  'Posts - 3D Cotrim Lab.png': { en: 'Music box with ballerina', pt: 'Caixa de música com bailarina' },
+};

@@ -50,6 +50,28 @@ export const en = {
           'Developed AI-based body tracking using ZED 2i for posture and object detection.',
         ],
       },
+      {
+        role: 'MSc Thesis Researcher',
+        company: 'INEGI',
+        period: '2024',
+        title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
+        bullets: [
+          'Electro-pneumatic system integration: analysed and modified electrical and pneumatic circuits to improve actuator performance, controllability and test repeatability.',
+          'Instrumentation & signal acquisition: designed a data acquisition system integrating optical sensors, strain gauges, pressure sensors, signal amplifiers and high-speed measurement hardware.',
+          'Industrial software development: developed a LabVIEW application for real-time data acquisition, signal processing, test monitoring, automatic results visualization and CSV/Excel export.',
+          'System troubleshooting & optimization: investigated discrepancies between theoretical simulations and experimental results, implementing hardware modifications and evaluating system performance through testing.',
+          'Calibration & validation: calibrated the measurement system and validated software outputs against experimental measurements to ensure reliable and consistent results.',
+        ],
+      },
+      {
+        role: 'Automation Summer Intern',
+        company: 'Summer Internship',
+        period: 'Summer 2022',
+        bullets: [
+          'Programmed PLCs in Ladder, FBD and Structured Text (IEC 61131-3) using CODESYS.',
+          'Implemented a serial communication protocol on an Advantech SoftPLC, covering data exchange with external devices.',
+        ],
+      },
     ],
   },
   skills: {
