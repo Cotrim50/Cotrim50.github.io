@@ -1,0 +1,28 @@
+---
+import type { Dict } from '../data/i18n/en';
+import Base from '../layouts/Base.astro';
+import Navbar from './Navbar.astro';
+import Hero from './Hero.astro';
+import About from './About.astro';
+import Experience from './Experience.astro';
+import Skills from './Skills.astro';
+import Education from './Education.astro';
+import Projects from './Projects.astro';
+import Contact from './Contact.astro';
+import Footer from './Footer.astro';
+interface Props { t: Dict; path: string }
+const { t, path } = Astro.props;
+---
+<Base t={t} path={path}>
+  <Navbar t={t} />
+  <main>
+    <Hero t={t} />
+    <About t={t} />
+    <Experience t={t} />
+    <Skills t={t} />
+    <Education t={t} />
+    <Projects t={t} />
+    <Contact t={t} />
+  </main>
+  <Footer t={t} />
+</Base>

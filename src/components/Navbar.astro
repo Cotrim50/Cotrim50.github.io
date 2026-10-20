@@ -1,0 +1,22 @@
+---
+import type { Dict } from '../data/i18n/en';
+interface Props { t: Dict }
+const { t } = Astro.props;
+const prefix = t.lang === 'pt' ? '/pt/' : '/';
+const switchHref = t.lang === 'pt' ? '/' : '/pt/';
+const links = ['about', 'experience', 'skills', 'education', 'projects', 'contact'] as const;
+---
+<header class="sticky top-0 z-50 border-b border-line bg-bg/80 backdrop-blur">
+  <nav aria-label="Main" class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-5 py-3">
+    <a href={prefix} class="font-mono font-bold text-accent">&lt;JC /&gt;</a>
+    <ul class="order-3 flex w-full gap-4 overflow-x-auto font-mono text-sm text-muted sm:order-none sm:w-auto">
+      {links.map((l) => (
+        <li><a class="whitespace-nowrap transition hover:text-accent" href={`${prefix}#${l}`}>{t.nav[l]}</a></li>
+      ))}
+    </ul>
+    <a href={switchHref} hreflang={t.lang === 'pt' ? 'en' : 'pt'} lang={t.lang === 'pt' ? 'en' : 'pt'} aria-label={t.nav.switchAria}
+       class="rounded-md border border-line px-3 py-1 font-mono text-xs text-accent transition hover:border-accent">
+      {t.nav.switchLabel}
+    </a>
+  </nav>
+</header>

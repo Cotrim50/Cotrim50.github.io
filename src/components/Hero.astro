@@ -1,0 +1,19 @@
+---
+import type { Dict } from '../data/i18n/en';
+import { profile } from '../data/profile';
+interface Props { t: Dict }
+const { t } = Astro.props;
+---
+<section class="section pt-24 sm:pt-32" aria-labelledby="hero-title">
+  <p class="font-mono text-accent">{t.hero.greeting}</p>
+  <h1 id="hero-title" class="mt-2 text-4xl font-extrabold tracking-tight sm:text-6xl">{profile.name}</h1>
+  <p class="mt-3 bg-gradient-to-r from-accent to-accent2 bg-clip-text text-2xl font-semibold text-transparent sm:text-3xl">{t.hero.role}</p>
+  <p class="mt-5 max-w-2xl text-lg text-muted">{t.hero.tagline}</p>
+  <p class="mt-2 font-mono text-sm text-muted">📍 {t.hero.location}</p>
+  <div class="mt-8 flex flex-wrap gap-3">
+    <a class="btn btn-primary" href={profile.cv} download>{t.hero.cv}</a>
+    <a class="btn" href={profile.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn" href="#contact">{t.hero.contact}</a>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+---
+import type { Dict } from '../data/i18n/en';
+interface Props { t: Dict }
+const { t } = Astro.props;
+---
+<section id="education" class="section" aria-labelledby="edu-title">
+  <h2 id="edu-title" class="section-title">{t.education.title}</h2>
+  <ul class="grid gap-4 sm:grid-cols-2">
+    {t.education.items.map((e) => (
+      <li class="card">
+        <h3 class="font-semibold">{e.degree}</h3>
+        <p class="font-mono text-sm text-accent">{e.school} · {e.year}</p>
+      </li>
+    ))}
+  </ul>
+</section>
