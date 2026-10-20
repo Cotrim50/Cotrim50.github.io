@@ -5,7 +5,7 @@ export const profile = {
   email: 'cotrim.ze@gmail.com',
   linkedin: 'https://linkedin.com/in/jose-cotrim',
   github: 'https://github.com/Cotrim50',
-  instagram: '' as string, // TODO: paste your Instagram page URL
+  instagram: 'https://www.instagram.com/cotrim3dlab/',
   cv: '/cv/Jose_Cotrim_CV.pdf',
 };
 
@@ -39,3 +39,7 @@ export const projects = [
     tags: ['TypeScript', 'SCSS', 'CSS', 'JavaScript'],
   },
 ];
+
+// Certificates: put PDFs in public/certificates/ and add entries here.
+// Example: { title: 'C# Masterclass', issuer: 'Udemy', year: '2025', file: '/certificates/csharp.pdf' }
+export const certificates: { title: string; issuer: string; year: string; file?: string; url?: string }[] = [];

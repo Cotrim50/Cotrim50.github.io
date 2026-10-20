@@ -69,6 +69,7 @@ export const en = {
       { degree: 'BSc in Mechanical Engineering', school: 'FEUP', year: '2022' },
     ],
   },
+  certificates: { title: 'Certificates', view: 'View certificate' },
   projects: {
     title: 'Projects',
     repo: 'View repository',

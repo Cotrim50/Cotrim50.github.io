@@ -15,7 +15,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 body { @apply bg-bg text-ink antialiased; background-image: radial-gradient(circle at 20% 0%, #162050 0, transparent 40%); }
 
 @layer components {
-  .section { @apply mx-auto max-w-5xl px-5 py-16 sm:py-20; }
+  .section { @apply mx-auto max-w-5xl px-5 py-8 sm:py-10; }
   .section-title { @apply mb-8 font-mono text-2xl font-bold text-ink before:mr-2 before:text-accent before:content-['#']; }
   .card { @apply rounded-xl border border-line bg-surface/70 p-5 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10; }
   .pill { @apply inline-block rounded-full border border-line bg-bg px-3 py-1 font-mono text-xs text-accent; }

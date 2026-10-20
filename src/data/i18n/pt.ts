@@ -71,6 +71,7 @@ export const pt: Dict = {
       { degree: 'Licenciatura em Engenharia Mecânica', school: 'FEUP', year: '2022' },
     ],
   },
+  certificates: { title: 'Certificados', view: 'Ver certificado' },
   projects: {
     title: 'Projetos',
     repo: 'Ver repositório',
