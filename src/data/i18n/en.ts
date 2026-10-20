@@ -45,7 +45,6 @@ export const en = {
         company: 'INEGI',
         period: 'Sep 2024 – Oct 2025',
         bullets: [
-          'Developed LabVIEW applications for high-speed experimental testing systems.',
           'Built Python tools for questionnaire processing and statistical analysis.',
           'Developed AI-based body tracking using ZED 2i for posture and object detection.',
         ],

@@ -47,7 +47,6 @@ export const pt: Dict = {
         company: 'INEGI',
         period: 'Set 2024 – Out 2025',
         bullets: [
-          'Desenvolvi aplicações LabVIEW para sistemas de ensaio experimental de alta velocidade.',
           'Criei ferramentas Python para processamento de questionários e análise estatística.',
           'Desenvolvi tracking corporal com IA usando ZED 2i para deteção de postura e objetos.',
         ],
