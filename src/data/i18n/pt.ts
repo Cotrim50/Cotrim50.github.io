@@ -53,6 +53,7 @@ export const pt: Dict = {
           'Implementei algoritmos de postura a partir de keypoints 3D: inclinação, flexão lateral e rotação axial do tronco, inclinação da cabeça, posição dos braços (cotovelo acima do ombro) e deteção sentado/em pé, com limiares configuráveis.',
           'Criei relatórios automáticos: dados da sessão guardados em JSON e convertidos em relatórios PDF com estatísticas de sentado/em pé e gráficos de postura ao longo do tempo (matplotlib, ReportLab).',
           'Adicionei um visualizador em tempo real (OpenCV/OpenGL) com indicação de má postura e gravação de vídeo da sessão.',
+          'Implementei um algoritmo de anonimização (pixelização da pessoa detetada) no sistema de ergonomia para proteger a privacidade e os dados dos trabalhadores.',
           'Desenvolvi um programa para um robot colaborativo Universal Robots UR5 para demonstrar a colaboração entre humanos e robots no mesmo espaço.',
         ],
       },
