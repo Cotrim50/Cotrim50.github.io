@@ -81,6 +81,12 @@ export const en = {
       addim: 'Draft: Private fork of the Addim website, a TypeScript/SCSS front-end. Used to study and customise an existing production codebase (components, styling, build pipeline). Goal: learn from a real-world project structure and contribute improvements.',
     },
   },
+  printing: {
+    title: '3D Printing',
+    text: "My hobby: designing and printing 3D objects.",
+    alt: '3D printed object',
+    instagram: 'See more on Instagram',
+  },
   contact: {
     title: 'Contact',
     text: "Open to new opportunities. Let's talk.",

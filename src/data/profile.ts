@@ -5,6 +5,7 @@ export const profile = {
   email: 'cotrim.ze@gmail.com',
   linkedin: 'https://linkedin.com/in/jose-cotrim',
   github: 'https://github.com/Cotrim50',
+  instagram: '' as string, // TODO: paste your Instagram page URL
   cv: '/cv/Jose_Cotrim_CV.pdf',
 };
 

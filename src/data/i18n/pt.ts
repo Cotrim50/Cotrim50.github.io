@@ -83,6 +83,12 @@ export const pt: Dict = {
       addim: 'Rascunho: Fork privado do website da Addim, front-end em TypeScript/SCSS. Usado para estudar e personalizar uma base de código real (componentes, estilos, build). Objetivo: aprender com a estrutura de um projeto real e contribuir com melhorias.',
     },
   },
+  printing: {
+    title: 'Impressão 3D',
+    text: 'O meu hobby: desenhar e imprimir objetos em 3D.',
+    alt: 'Objeto impresso em 3D',
+    instagram: 'Ver mais no Instagram',
+  },
   contact: {
     title: 'Contacto',
     text: 'Aberto a novas oportunidades. Vamos falar.',

@@ -1,0 +1,28 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import type { Dict } from '../data/i18n/en';
+import { profile } from '../data/profile';
+interface Props { t: Dict }
+const { t } = Astro.props;
+const dir = path.join(process.cwd(), 'public', '3d');
+const images = fs.existsSync(dir)
+  ? fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp|gif|jfif|avif)$/i.test(f)).sort()
+  : [];
+---
+{images.length > 0 && (
+  <section id="printing" class="section" aria-labelledby="printing-title">
+    <h2 id="printing-title" class="section-title">{t.printing.title}</h2>
+    <p class="mb-6 max-w-3xl text-muted">{t.printing.text}</p>
+    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      {images.map((f) => (
+        <li class="overflow-hidden rounded-xl border border-line">
+          <a href={`/3d/${f}`} target="_blank" rel="noopener noreferrer">
+            <img src={`/3d/${f}`} alt={t.printing.alt} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
+          </a>
+        </li>
+      ))}
+    </ul>
+    {profile.instagram && <a class="btn mt-6" href={profile.instagram} target="_blank" rel="noopener noreferrer">{t.printing.instagram} ↗</a>}
+  </section>
+)}
