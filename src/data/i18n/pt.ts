@@ -78,9 +78,9 @@ export const pt: Dict = {
     badges: { public: 'Projeto público', private: 'Projeto privado', fork: 'Projeto privado / fork' },
     privateNote: 'Detalhes públicos limitados.',
     items: {
-      nzwalks: 'Aplicação ASP.NET.',
-      flip7: 'Jogo web multijogador. Código-fonte privado.',
-      addim: 'Website da Addim. Fork privado do repositório original.',
+      nzwalks: 'Rascunho: API Web ASP.NET Core e front-end web para consultar e gerir trilhos pedestres da Nova Zelândia (regiões, dificuldades, percursos). Feito com C#, Entity Framework e SQL Server, numa arquitetura em camadas (controllers, repositórios, DTOs com AutoMapper) e autenticação JWT. Objetivo: praticar a construção de uma API REST limpa e segura de ponta a ponta.',
+      flip7: 'Rascunho: Versão web multijogador em tempo real do jogo de cartas Flip 7, alojada na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Objetivo: jogar online com amigos e explorar arquitetura multijogador em tempo real. Código-fonte privado.',
+      addim: 'Rascunho: Fork privado do website da Addim, front-end em TypeScript/SCSS. Usado para estudar e personalizar uma base de código real (componentes, estilos, build). Objetivo: aprender com a estrutura de um projeto real e contribuir com melhorias.',
     },
   },
   contact: {

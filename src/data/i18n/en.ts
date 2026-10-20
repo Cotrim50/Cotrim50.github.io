@@ -76,9 +76,9 @@ export const en = {
     badges: { public: 'Public project', private: 'Private project', fork: 'Private / Forked project' },
     privateNote: 'Limited public details available.',
     items: {
-      nzwalks: 'ASP.NET application.',
-      flip7: 'Multiplayer web game. Source code is private.',
-      addim: 'Addim website. Private fork of the original repository.',
+      nzwalks: 'Draft: ASP.NET Core Web API and web front-end for browsing and managing walking trails in New Zealand (regions, difficulties, walks). Built with C#, Entity Framework and SQL Server, using a layered architecture (controllers, repositories, DTOs with AutoMapper) and JWT authentication. Goal: practise building a clean, secure REST API end to end.',
+      flip7: 'Draft: Real-time multiplayer web version of the Flip 7 card game, deployed on Vercel. JavaScript front-end with a PostgreSQL (PL/pgSQL) backend that keeps game state and rules in sync between players. Goal: play with friends online and explore real-time multiplayer architecture. Source code is private.',
+      addim: 'Draft: Private fork of the Addim website, a TypeScript/SCSS front-end. Used to study and customise an existing production codebase (components, styling, build pipeline). Goal: learn from a real-world project structure and contribute improvements.',
     },
   },
   contact: {
