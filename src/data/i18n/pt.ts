@@ -55,7 +55,8 @@ export const pt: Dict = {
       {
         role: 'Tese de Mestrado',
         company: 'INEGI',
-        period: '2024',
+        period: 'Fev 2024 – Jun 2024',
+        image: '/media/thesis-labview.png',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
