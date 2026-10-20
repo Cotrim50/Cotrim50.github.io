@@ -42,4 +42,10 @@ export const projects = [
 
 // Certificates: put PDFs in public/certificates/ and add entries here.
 // Example: { title: 'C# Masterclass', issuer: 'Udemy', year: '2025', file: '/certificates/csharp.pdf' }
-export const certificates: { title: string; issuer: string; year: string; file?: string; url?: string }[] = [];
+export const certificates: { title: string; issuer: string; year: string; file?: string; url?: string }[] = [
+  { title: 'Build ASP.NET Core Web API – Scratch To Finish (.NET 8)', issuer: 'Udemy', year: '2026', file: '/certificates/ASP.NET.pdf' },
+  { title: 'Docker for .NET Developer – Getting Started', issuer: 'Udemy', year: '2026', file: '/certificates/Docker%20.Net.pdf' },
+  { title: 'Test Driven Development in ASP.NET Core', issuer: 'Udemy', year: '2026', file: '/certificates/Test%20Driven%20Development.pdf' },
+  { title: 'Unified Diagnostic Services (UDS)', issuer: 'Udemy', year: '2026', file: '/certificates/UDS.pdf' },
+  { title: 'Master CAN protocol from Scratch (CAN + CAN-FD)', issuer: 'Udemy', year: '2026', file: '/certificates/CAN.pdf' },
+];

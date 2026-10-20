@@ -17,8 +17,8 @@ const images = fs.existsSync(dir)
     <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3">
       {images.map((f) => (
         <li class="overflow-hidden rounded-xl border border-line">
-          <a href={`/3d/${f}`} target="_blank" rel="noopener noreferrer">
-            <img src={`/3d/${f}`} alt={t.printing.alt} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
+          <a href={`/3d/${encodeURIComponent(f)}`} target="_blank" rel="noopener noreferrer">
+            <img src={`/3d/${encodeURIComponent(f)}`} alt={t.printing.alt} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
           </a>
         </li>
       ))}
