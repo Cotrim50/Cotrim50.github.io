@@ -7,7 +7,9 @@ import About from './About.astro';
 import Experience from './Experience.astro';
 import Skills from './Skills.astro';
 import Education from './Education.astro';
+import Certificates from './Certificates.astro';
 import Projects from './Projects.astro';
+import Printing from './Printing.astro';
 import Contact from './Contact.astro';
 import Footer from './Footer.astro';
 interface Props { t: Dict; path: string }
@@ -19,9 +21,11 @@ const { t, path } = Astro.props;
     <Hero t={t} />
     <About t={t} />
     <Experience t={t} />
+    <Projects t={t} />
     <Skills t={t} />
     <Education t={t} />
-    <Projects t={t} />
+    <Certificates t={t} />
+    <Printing t={t} />
     <Contact t={t} />
   </main>
   <Footer t={t} />

@@ -4,7 +4,7 @@ interface Props { t: Dict }
 const { t } = Astro.props;
 const prefix = t.lang === 'pt' ? '/pt/' : '/';
 const switchHref = t.lang === 'pt' ? '/' : '/pt/';
-const links = ['about', 'experience', 'skills', 'education', 'projects', 'contact'] as const;
+const links = ['about', 'experience', 'projects', 'skills', 'education', 'certificates', 'contact'] as const;
 ---
 <header class="sticky top-0 z-50 border-b border-line bg-bg/80 backdrop-blur">
   <nav aria-label="Main" class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-5 py-3">

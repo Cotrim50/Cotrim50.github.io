@@ -1,0 +1,30 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import type { Dict } from '../data/i18n/en';
+import { profile, printCaptions } from '../data/profile';
+interface Props { t: Dict }
+const { t } = Astro.props;
+const dir = path.join(process.cwd(), 'public', '3d');
+const caption = (f: string) => printCaptions[f]?.[t.lang as 'en' | 'pt'] ?? f.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ');
+const images = fs.existsSync(dir)
+  ? fs.readdirSync(dir).filter((f) => /\.(jpe?g|png|webp|gif|jfif|avif)$/i.test(f)).sort()
+  : [];
+---
+{images.length > 0 && (
+  <section id="printing" class="section" aria-labelledby="printing-title">
+    <h2 id="printing-title" class="section-title">{t.printing.title}</h2>
+    <p class="mb-6 max-w-3xl text-muted">{t.printing.text}</p>
+    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      {images.map((f) => (
+        <li class="group relative overflow-hidden rounded-xl border border-line">
+          <a href={`/3d/${encodeURIComponent(f)}`} target="_blank" rel="noopener noreferrer">
+            <img src={`/3d/${encodeURIComponent(f)}`} alt={caption(f)} loading="lazy" class="aspect-square w-full object-cover transition hover:scale-105" />
+          </a>
+          <p class="pointer-events-none absolute inset-0 flex items-center justify-center bg-bg/75 p-3 text-center font-semibold text-ink opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">{caption(f)}</p>
+        </li>
+      ))}
+    </ul>
+    {profile.instagram && <a class="btn mt-6" href={profile.instagram} target="_blank" rel="noopener noreferrer">{t.printing.instagram} ↗</a>}
+  </section>
+)}

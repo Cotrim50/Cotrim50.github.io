@@ -1,18 +1,18 @@
 // Language-independent facts. Translatable text lives in ./i18n/*.ts
 export const profile = {
   name: 'José Cotrim',
-  phone: '+351 960 251 458',
   email: 'cotrim.ze@gmail.com',
   linkedin: 'https://linkedin.com/in/jose-cotrim',
   github: 'https://github.com/Cotrim50',
+  instagram: 'https://www.instagram.com/cotrim3dlab/',
   cv: '/cv/Jose_Cotrim_CV.pdf',
 };
 
 export const skills: Record<string, string[]> = {
-  software: ['C#', '.NET', 'REST APIs', 'MVVM', 'Entity Framework', 'SQL Server', 'Python'],
+  software: ['C#', '.NET', 'ASP.NET Core', 'Angular', 'REST APIs', 'MVVM', 'Entity Framework', 'SQL Server', 'Python'],
   desktop: ['WPF', 'WinUI', 'WinForms'],
-  devops: ['Azure DevOps', 'Git', 'CI/CD', 'Agile', 'NuGet'],
-  automation: ['TwinCAT 3', 'Codesys', 'ST / FBD / Ladder', 'Siemens TIA Portal', 'LabVIEW', 'MQTT'],
+  devops: ['Azure DevOps', 'Git', 'CI/CD', 'Agile', 'NuGet', 'Docker', 'TDD'],
+  automation: ['TwinCAT 3', 'Codesys', 'ST / FBD / Ladder', 'Siemens TIA Portal', 'LabVIEW', 'MVTec Halcon', 'TwinSAFE', 'CAN', 'MQTT'],
 };
 
 export const projects = [
@@ -33,8 +33,34 @@ export const projects = [
   {
     id: 'addim',
     repo: undefined as string | undefined,
-    link: undefined as string | undefined,
-    visibility: 'fork',
+    link: 'https://addim.pt' as string | undefined,
+    visibility: 'private',
     tags: ['TypeScript', 'SCSS', 'CSS', 'JavaScript'],
   },
+  {
+    id: 'pickplace',
+    repo: undefined as string | undefined,
+    link: undefined as string | undefined,
+    visibility: 'academic',
+    tags: ['Factory IO', 'Siemens', 'TIA Portal', 'Structured Text', 'GRAFCET'],
+  },
 ];
+
+// Certificates: put PDFs in public/certificates/ and add entries here.
+// Example: { title: 'C# Masterclass', issuer: 'Udemy', year: '2025', file: '/certificates/csharp.pdf' }
+export const certificates: { title: string; issuer: string; year: string; file?: string; url?: string }[] = [
+  { title: 'Build ASP.NET Core Web API – Scratch To Finish (.NET 8)', issuer: 'Udemy', year: '2026', file: '/certificates/ASP.NET.pdf' },
+  { title: 'Docker for .NET Developer – Getting Started', issuer: 'Udemy', year: '2026', file: '/certificates/Docker%20.Net.pdf' },
+  { title: 'Test Driven Development in ASP.NET Core', issuer: 'Udemy', year: '2026', file: '/certificates/Test%20Driven%20Development.pdf' },
+  { title: 'Master CAN protocol from Scratch (CAN + CAN-FD)', issuer: 'Udemy', year: '2026', file: '/certificates/CAN.pdf' },
+];
+
+// Captions for public/3d images (key = file name). Missing ones fall back to the file name.
+export const printCaptions: Record<string, { en: string; pt: string }> = {
+  'Avengers_lamp_3d.png': { en: 'Avengers lamp', pt: 'Candeeiro Avengers' },
+  'Avengers_lamp_3d_1.png': { en: 'Avengers lamp', pt: 'Candeeiro Avengers' },
+  'Charmander_Pokeball_3d.png': { en: 'Charmander Pokéball', pt: 'Pokébola do Charmander' },
+  'F1_Calendar_Keychains_3d.jpeg': { en: 'F1 calendar keychains', pt: 'Porta-chaves calendário F1' },
+  'Nametag_dog_3d.png': { en: 'Dog nametag', pt: 'Placa de identificação para cão' },
+  'Posts - 3D Cotrim Lab.png': { en: 'Music box with ballerina', pt: 'Caixa de música com bailarina' },
+};
