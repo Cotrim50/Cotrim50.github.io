@@ -1,0 +1,23 @@
+---
+import type { Dict } from '../data/i18n/en';
+import { skills } from '../data/profile';
+interface Props { t: Dict }
+const { t } = Astro.props;
+---
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <h2 id="skills-title" class="section-title">{t.skills.title}</h2>
+  <div class="grid gap-4 sm:grid-cols-2">
+    {Object.entries(skills).map(([key, list]) => (
+      <div class="card">
+        <h3 class="mb-3 font-semibold">{t.skills.groups[key as keyof typeof t.skills.groups]}</h3>
+        <ul class="flex flex-wrap gap-2">
+          {list.map((s) => <li class="pill">{s}</li>)}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <h3 class="mb-3 mt-8 font-semibold">{t.skills.languagesTitle}</h3>
+  <ul class="flex flex-wrap gap-2">
+    {t.skills.languages.map(([l, lvl]) => <li class="pill">{l} · {lvl}</li>)}
+  </ul>
+</section>

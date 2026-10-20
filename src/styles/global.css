@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b1020;
+  --color-surface: #111833;
+  --color-line: #1f2a4d;
+  --color-ink: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-accent: #22d3ee;
+  --color-accent2: #818cf8;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-bg text-ink antialiased; background-image: radial-gradient(circle at 20% 0%, #162050 0, transparent 40%); }
+
+@layer components {
+  .section { @apply mx-auto max-w-5xl px-5 py-16 sm:py-20; }
+  .section-title { @apply mb-8 font-mono text-2xl font-bold text-ink before:mr-2 before:text-accent before:content-['#']; }
+  .card { @apply rounded-xl border border-line bg-surface/70 p-5 transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-lg hover:shadow-accent/10; }
+  .pill { @apply inline-block rounded-full border border-line bg-bg px-3 py-1 font-mono text-xs text-accent; }
+  .btn { @apply inline-flex items-center gap-2 rounded-lg border border-accent px-4 py-2 font-medium text-accent transition hover:bg-accent hover:text-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent; }
+  .btn-primary { @apply bg-accent text-bg hover:bg-accent/80; }
+}

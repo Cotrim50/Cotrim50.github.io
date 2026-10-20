@@ -1,0 +1,24 @@
+---
+import type { Dict } from '../data/i18n/en';
+import { profile } from '../data/profile';
+interface Props { t: Dict }
+const { t } = Astro.props;
+const items = [
+  [t.contact.email, profile.email, `mailto:${profile.email}`],
+  [t.contact.phone, profile.phone, `tel:${profile.phone.replace(/\s/g, '')}`],
+  [t.contact.linkedin, 'jose-cotrim', profile.linkedin],
+  [t.contact.github, 'Cotrim50', profile.github],
+];
+---
+<section id="contact" class="section" aria-labelledby="contact-title">
+  <h2 id="contact-title" class="section-title">{t.contact.title}</h2>
+  <p class="mb-6 text-muted">{t.contact.text}</p>
+  <ul class="grid gap-4 sm:grid-cols-2">
+    {items.map(([label, text, href]) => (
+      <li><a class="card block" href={href} rel="noopener noreferrer">
+        <span class="block font-mono text-xs text-accent">{label}</span>
+        <span class="break-all">{text}</span>
+      </a></li>
+    ))}
+  </ul>
+</section>
