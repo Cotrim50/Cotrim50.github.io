@@ -12,7 +12,7 @@ export const pt: Dict = {
   hero: {
     greeting: 'Olá, sou o',
     role: 'Engenheiro de Automação e Software',
-    tagline: 'Desenvolvo software .NET que liga PLCs, visão industrial e bases de dados ao longo da linha de produção.',
+    tagline: 'Do código de PLC às aplicações .NET: desenvolvo o software que faz funcionar e liga a linha de produção.',
     location: 'Vila do Conde, Porto',
     cv: 'Descarregar CV',
     contact: 'Contactar',
@@ -20,7 +20,7 @@ export const pt: Dict = {
   about: {
     title: 'Sobre',
     text: [
-      "Sou engenheiro de software e automação, com mais de 2 anos de experiência em ambiente industrial. Comecei na engenharia mecânica, passei para a automação e hoje desenvolvo o software que liga as máquinas aos dados: aplicações .NET, visão artificial e integração com PLCs em linhas de produção automóvel.",
+      "Sou engenheiro de software e automação, com mais de 2 anos de experiência em ambiente industrial. Comecei na engenharia mecânica, passei para a automação e hoje trabalho dos dois lados da linha de produção: programo PLCs (Beckhoff TwinCAT, Siemens, CODESYS) e desenvolvo as aplicações .NET, a visão artificial e as bases de dados que ligam as máquinas aos dados, em linhas de produção automóvel.",
       "Fora do trabalho, desenho e imprimo objetos em 3D.",
     ],
   },
