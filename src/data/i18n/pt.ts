@@ -111,7 +111,7 @@ export const pt: Dict = {
     privateNote: 'Detalhes públicos limitados.',
     items: {
       nzwalks: 'API Web ASP.NET Core e front-end web para consultar e gerir trilhos pedestres da Nova Zelândia (regiões, dificuldades, percursos). Feito com C#, Entity Framework e SQL Server, numa arquitetura em camadas (controllers, repositórios, DTOs com AutoMapper) e autenticação JWT. Objetivo: praticar a construção de uma API REST limpa e segura de ponta a ponta.',
-      flip7: 'Versão web multijogador em tempo real do jogo de cartas Flip 7, alojada na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Objetivo: jogar online com amigos e explorar arquitetura multijogador em tempo real. Código-fonte privado.',
+      flip7: "Digitalização de um dos meus jogos de cartas favoritos: um jogo web multijogador em tempo real, alojado na Vercel. Front-end em JavaScript com backend PostgreSQL (PL/pgSQL) que mantém o estado e as regras do jogo sincronizados entre jogadores. Código-fonte privado.",
       addim: "Website para uma ONG portuguesa, que decidi desenvolver por iniciativa própria. Front-end em TypeScript/SCSS, publicado em addim.pt.",
       pickplace: 'Sistema de pick and place em ambiente simulado, com Factory IO ligado a um PLC Siemens. Programado no TIA Portal em Structured Text, com a sequência de controlo desenhada em GRAFCET. Objetivo: validar a lógica de automação de uma célula de pick and place em simulação antes de passar a hardware real.',
     },

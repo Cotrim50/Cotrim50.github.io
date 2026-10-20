@@ -109,7 +109,7 @@ export const en = {
     privateNote: 'Limited public details available.',
     items: {
       nzwalks: 'ASP.NET Core Web API and web front-end for browsing and managing walking trails in New Zealand (regions, difficulties, walks). Built with C#, Entity Framework and SQL Server, using a layered architecture (controllers, repositories, DTOs with AutoMapper) and JWT authentication. Goal: practise building a clean, secure REST API end to end.',
-      flip7: 'Real-time multiplayer web version of the Flip 7 card game, deployed on Vercel. JavaScript front-end with a PostgreSQL (PL/pgSQL) backend that keeps game state and rules in sync between players. Goal: play with friends online and explore real-time multiplayer architecture. Source code is private.',
+      flip7: "Digital version of one of my favourite card games: a real-time multiplayer web game, deployed on Vercel. JavaScript front-end with a PostgreSQL (PL/pgSQL) backend that keeps game state and rules in sync between players. Source code is private.",
       addim: "Website for a Portuguese NGO, which I decided to build on my own initiative. TypeScript/SCSS front-end, published at addim.pt.",
       pickplace: 'Pick and place system in a simulated environment, using Factory IO connected to a Siemens PLC. Programmed in TIA Portal with Structured Text, with the control sequence designed as a GRAFCET. Goal: validate the automation logic of a pick and place cell in simulation before moving to real hardware.',
     },
