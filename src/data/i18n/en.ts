@@ -51,7 +51,7 @@ export const en = {
         ],
       },
       {
-        role: 'MSc Thesis Researcher',
+        role: 'Master Thesis',
         company: 'INEGI',
         period: '2024',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
@@ -64,8 +64,8 @@ export const en = {
         ],
       },
       {
-        role: 'Automation Summer Intern',
-        company: 'Summer Internship',
+        role: 'Summer Intern – Automation',
+        company: 'Pixel Voltaic',
         period: 'Summer 2022',
         bullets: [
           'Programmed PLCs in Ladder, FBD and Structured Text (IEC 61131-3) using CODESYS.',

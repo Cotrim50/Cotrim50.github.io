@@ -53,7 +53,7 @@ export const pt: Dict = {
         ],
       },
       {
-        role: 'Investigador de Tese de Mestrado',
+        role: 'Tese de Mestrado',
         company: 'INEGI',
         period: '2024',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
@@ -66,8 +66,8 @@ export const pt: Dict = {
         ],
       },
       {
-        role: 'Estagiário de Verão em Automação',
-        company: 'Estágio de Verão',
+        role: 'Estágio de Verão – Automação',
+        company: 'Pixel Voltaic',
         period: 'Verão 2022',
         bullets: [
           'Programei PLCs em Ladder, FBD e Structured Text (IEC 61131-3) com CODESYS.',
