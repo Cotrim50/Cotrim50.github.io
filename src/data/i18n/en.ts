@@ -44,6 +44,7 @@ export const en = {
         role: 'Product Development Engineer',
         company: 'INEGI',
         period: 'Sep 2024 – Oct 2025',
+        video: '/media/video_ergonomia.mp4',
         bullets: [
           'Built Python tools for questionnaire processing and statistical analysis.',
           'Developed a real-time ergonomic posture analysis system in Python using a ZED 2i stereo camera and the ZED SDK body tracking (18-keypoint skeleton, multi-person tracking).',

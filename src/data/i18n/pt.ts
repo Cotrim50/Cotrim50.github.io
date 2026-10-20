@@ -46,6 +46,7 @@ export const pt: Dict = {
         role: 'Engenheiro de Desenvolvimento de Produto',
         company: 'INEGI',
         period: 'Set 2024 – Out 2025',
+        video: '/media/video_ergonomia.mp4',
         bullets: [
           'Criei ferramentas Python para processamento de questionários e análise estatística.',
           'Desenvolvi um sistema de análise ergonómica de postura em tempo real em Python, com câmara estéreo ZED 2i e body tracking do ZED SDK (esqueleto de 18 pontos, tracking multi-pessoa).',
