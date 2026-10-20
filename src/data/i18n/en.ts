@@ -55,7 +55,6 @@ export const en = {
         company: 'INEGI',
         period: 'Feb 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
-        imageCaption: 'LabVIEW interface I built for the thesis :D',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Electro-pneumatic system integration: analysed and modified electrical and pneumatic circuits to improve actuator performance, controllability and test repeatability.',
@@ -108,7 +107,7 @@ export const en = {
   },
   printing: {
     title: '3D Printing',
-    text: "My hobby: designing and printing 3D objects. Some I sell, other I keep for myself.",
+    text: "My hobby: designing and printing 3D objects. Some I sell, others I keep for myself :D",
     alt: '3D printed object',
     instagram: 'See more on Instagram',
   },

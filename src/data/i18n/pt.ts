@@ -57,7 +57,6 @@ export const pt: Dict = {
         company: 'INEGI',
         period: 'Fev 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
-        imageCaption: 'Interface LabVIEW que desenvolvi para a tese :D',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
@@ -110,7 +109,7 @@ export const pt: Dict = {
   },
   printing: {
     title: 'Impressão 3D',
-    text: 'O meu hobby: desenhar e imprimir objetos em 3D.',
+    text: 'O meu hobby: desenhar e imprimir objetos em 3D. Alguns vendo, outros guardo para mim :D',
     alt: 'Objeto impresso em 3D',
     instagram: 'Ver mais no Instagram',
   },
