@@ -47,9 +47,12 @@ export const pt: Dict = {
         company: 'INEGI',
         period: 'Set 2024 – Out 2025',
         bullets: [
-          'Desenvolvi aplicações LabVIEW para sistemas de ensaio experimental de alta velocidade.',
           'Criei ferramentas Python para processamento de questionários e análise estatística.',
-          'Desenvolvi tracking corporal com IA usando ZED 2i para deteção de postura e objetos.',
+          'Desenvolvi um sistema de análise ergonómica de postura em tempo real em Python, com câmara estéreo ZED 2i e body tracking do ZED SDK (esqueleto de 18 pontos, tracking multi-pessoa).',
+          'Implementei algoritmos de postura a partir de keypoints 3D: inclinação, flexão lateral e rotação axial do tronco, inclinação da cabeça, posição dos braços (cotovelo acima do ombro) e deteção sentado/em pé, com limiares configuráveis.',
+          'Criei relatórios automáticos: dados da sessão guardados em JSON e convertidos em relatórios PDF com estatísticas de sentado/em pé e gráficos de postura ao longo do tempo (matplotlib, ReportLab).',
+          'Adicionei um visualizador em tempo real (OpenCV/OpenGL) com indicação de má postura e gravação de vídeo da sessão.',
+          'Desenvolvi um programa para um robot colaborativo Universal Robots UR5 para demonstrar a colaboração entre humanos e robots no mesmo espaço.',
         ],
       },
       {
@@ -57,6 +60,7 @@ export const pt: Dict = {
         company: 'INEGI',
         period: 'Fev 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
+        imageHover: 'HMI desenvolvida por mim',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Integração de sistemas eletropneumáticos: analisei e modifiquei circuitos elétricos e pneumáticos para melhorar o desempenho dos atuadores, a controlabilidade e a repetibilidade dos ensaios.',
@@ -69,7 +73,7 @@ export const pt: Dict = {
       {
         role: 'Gestor de Parcerias',
         company: 'Erasmus Student Network Porto',
-        period: 'Set 2023 – Presente',
+        period: 'Set 2023 – Out 2025',
         bullets: [
           'Utilização diária do inglês na comunicação com estudantes internacionais e parceiros.',
           'Expandi a rede de parceiros da organização, garantindo 16 parcerias comerciais e 3 de alojamento e atingindo 47% da meta anual de financiamento em seis meses.',

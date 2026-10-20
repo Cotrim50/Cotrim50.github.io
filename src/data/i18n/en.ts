@@ -45,9 +45,12 @@ export const en = {
         company: 'INEGI',
         period: 'Sep 2024 – Oct 2025',
         bullets: [
-          'Developed LabVIEW applications for high-speed experimental testing systems.',
           'Built Python tools for questionnaire processing and statistical analysis.',
-          'Developed AI-based body tracking using ZED 2i for posture and object detection.',
+          'Developed a real-time ergonomic posture analysis system in Python using a ZED 2i stereo camera and the ZED SDK body tracking (18-keypoint skeleton, multi-person tracking).',
+          'Implemented posture algorithms from 3D keypoints: trunk inclination, lateral flexion and axial rotation, head tilt, arm position (elbow above shoulder) and sitting/standing detection, with configurable thresholds.',
+          'Built automatic reporting: session data stored as JSON and converted into PDF reports with sitting/standing statistics and posture charts over time (matplotlib, ReportLab).',
+          'Added an OpenCV/OpenGL live viewer with posture overlays and session video recording.',
+          'Developed a program for a Universal Robots UR5 collaborative robot to demonstrate human–robot collaboration in a shared workspace.',
         ],
       },
       {
@@ -55,6 +58,7 @@ export const en = {
         company: 'INEGI',
         period: 'Feb 2024 – Jun 2024',
         image: '/media/thesis-labview.png',
+        imageHover: 'Developed HMI',
         title: 'Characterization of a Split Hopkinson Pressure Bar for Measuring the Strength of Adhesive Joints under Tensile/Compression Impact',
         bullets: [
           'Electro-pneumatic system integration: analysed and modified electrical and pneumatic circuits to improve actuator performance, controllability and test repeatability.',
@@ -67,7 +71,7 @@ export const en = {
       {
         role: 'Partnerships Manager',
         company: 'Erasmus Student Network Porto',
-        period: 'Sep 2023 – Present',
+        period: 'Sep 2023 – Oct 2025',
         bullets: [
           'Daily use of English for communication with both international students and partners.',
           'Expanded the organization’s partner network, securing 16 commercial and 3 housing partnerships and achieving 47% of the annual funding target in six months.',
