@@ -10,7 +10,7 @@ export const en = {
   hero: {
     greeting: "Hi, I'm",
     role: 'Automation & Software Engineer',
-    tagline: 'I build .NET software that connects PLCs, machine vision and databases to the production line.',
+    tagline: 'I build .NET software that connects PLCs, machine vision and databases across the production line.',
     location: 'Vila do Conde, Porto',
     cv: 'Download CV',
     contact: 'Get in touch',
@@ -18,8 +18,8 @@ export const en = {
   about: {
     title: 'About',
     text: [
-      '.NET Software Engineer with 2+ years of experience building production-grade applications with C#, .NET, WPF, Entity Framework and SQL Server in industrial environments.',
-      'Skilled in software integration, Git, Azure DevOps and CI/CD within Agile teams, with a growing interest in Azure and cloud technologies.',
+      "I'm a software and automation engineer with 2+ years of experience in industrial environments. I started in mechanical engineering, moved into automation, and today I build the software that ties machines to data: .NET applications, machine vision and PLC integration for automotive production lines.",
+      "Outside work, I design and print 3D objects.",
     ],
   },
   experience: {
