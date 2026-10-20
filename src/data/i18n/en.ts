@@ -50,6 +50,7 @@ export const en = {
           'Implemented posture algorithms from 3D keypoints: trunk inclination, lateral flexion and axial rotation, head tilt, arm position (elbow above shoulder) and sitting/standing detection, with configurable thresholds.',
           'Built automatic reporting: session data stored as JSON and converted into PDF reports with sitting/standing statistics and posture charts over time (matplotlib, ReportLab).',
           'Added an OpenCV/OpenGL live viewer with posture overlays and session video recording.',
+          'Developed a program for a Universal Robots UR5 collaborative robot to demonstrate human–robot collaboration in a shared workspace.',
         ],
       },
       {
