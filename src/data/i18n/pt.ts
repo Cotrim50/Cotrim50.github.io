@@ -67,6 +67,15 @@ export const pt: Dict = {
         ],
       },
       {
+        role: 'Gestor de Parcerias',
+        company: 'Erasmus Student Network Porto',
+        period: 'Set 2023 – Presente',
+        bullets: [
+          'Utilização diária do inglês na comunicação com estudantes internacionais e parceiros.',
+          'Expandi a rede de parceiros da organização, garantindo 16 parcerias comerciais e 3 de alojamento e atingindo 47% da meta anual de financiamento em seis meses.',
+        ],
+      },
+      {
         role: 'Estágio de Verão – Automação',
         company: 'Pixel Voltaic',
         period: 'Verão 2022',

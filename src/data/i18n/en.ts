@@ -65,6 +65,15 @@ export const en = {
         ],
       },
       {
+        role: 'Partnerships Manager',
+        company: 'Erasmus Student Network Porto',
+        period: 'Sep 2023 – Present',
+        bullets: [
+          'Daily use of English for communication with both international students and partners.',
+          'Expanded the organization’s partner network, securing 16 commercial and 3 housing partnerships and achieving 47% of the annual funding target in six months.',
+        ],
+      },
+      {
         role: 'Summer Intern – Automation',
         company: 'Pixel Voltaic',
         period: 'Summer 2022',
