@@ -1,6 +1,7 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
+import ArchitectureSnapshot from './ArchitectureSnapshot.astro';
 import type { Dict } from '../data/i18n/en';
 interface Props { t: Dict }
 const { t } = Astro.props;
@@ -28,6 +29,7 @@ const hasImage = (src?: string) => !!src && fs.existsSync(path.join(process.cwd(
           <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-muted">
             {job.bullets.map((b) => <li>{b}</li>)}
           </ul>
+          {'snapshot' in job && <ArchitectureSnapshot data={job.snapshot} id="arch-snapshot" />}
         </div>
       </li>
     ))}

@@ -1,0 +1,42 @@
+---
+interface Snapshot {
+  title: string; caption: string; bullets: string[];
+  image: string; width: number; height: number; alt: string; note: string;
+  expand: string; expandAria: string; close: string; closeAria: string;
+}
+interface Props { data: Snapshot; id: string }
+const { data, id } = Astro.props;
+const parts = (b: string) => b.split(/\*\*(.+?)\*\*/g);
+---
+<div class="arch-snapshot mt-6 rounded-xl border border-line bg-bg/60 p-4 shadow-lg shadow-accent/10 sm:p-5" aria-labelledby={`${id}-title`} role="group">
+  <h4 id={`${id}-title`} class="font-mono text-base font-semibold text-accent">{data.title}</h4>
+  <p class="mt-1 text-sm italic text-muted">{data.caption}</p>
+  <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-muted">
+    {data.bullets.map((b) => (
+      <li>{parts(b).map((p, i) => (i % 2 ? <strong class="font-semibold text-ink">{p}</strong> : p))}</li>
+    ))}
+  </ul>
+  <figure class="mx-auto mt-4 max-w-[1100px]">
+    <button type="button" class="arch-open group relative block w-full cursor-zoom-in overflow-hidden rounded-lg border border-line focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" aria-label={data.expandAria} aria-haspopup="dialog" aria-controls={`${id}-dialog`}>
+      <img src={data.image} alt={data.alt} width={data.width} height={data.height} loading="lazy" decoding="async" class="h-auto w-full" />
+      <span class="pointer-events-none absolute bottom-2 right-2 rounded-md bg-bg/85 px-2 py-1 font-mono text-xs text-accent opacity-90 transition group-hover:opacity-100" aria-hidden="true">⤢ {data.expand}</span>
+    </button>
+    <figcaption class="mt-2 text-center text-xs text-muted">{data.note}</figcaption>
+  </figure>
+  <dialog id={`${id}-dialog`} class="arch-dialog m-auto max-h-[95vh] max-w-[95vw] overflow-auto rounded-xl border border-line bg-surface p-3 text-ink backdrop:bg-black/80" aria-label={data.title}>
+    <button type="button" class="arch-close sticky left-full top-0 z-10 mb-2 block rounded-md border border-accent bg-bg px-3 py-1 font-mono text-sm text-accent hover:bg-accent hover:text-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent" aria-label={data.closeAria}>✕ {data.close}</button>
+    <img src={data.image} alt={data.alt} width={data.width} height={data.height} loading="lazy" decoding="async" class="h-auto w-[min(1600px,90vw)] max-w-none rounded-lg bg-white" />
+  </dialog>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.arch-snapshot').forEach((root) => {
+    const dialog = root.querySelector('dialog') as HTMLDialogElement;
+    const open = root.querySelector('.arch-open') as HTMLButtonElement;
+    const close = root.querySelector('.arch-close') as HTMLButtonElement;
+    open.addEventListener('click', () => { dialog.showModal(); close.focus(); });
+    close.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => open.focus());
+  });
+</script>
