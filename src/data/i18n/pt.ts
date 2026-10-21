@@ -33,7 +33,7 @@ export const pt: Dict = {
         period: 'Nov 2025 – Presente',
         bullets: [
           'Liderei a modernização de aplicações desktop industriais legadas para uma arquitetura web com Angular, ASP.NET Core e Entity Framework Core, mantendo a integração com visão artificial, bases de dados de rastreabilidade e equipamentos de produção.',
-          'Desenvolvi aplicações .NET (WPF/MVVM) de rastreabilidade de produção e parametrização configurável de linhas com SQL Server, stored procedures e JSON, evitando recompilação em alterações de produção.',
+          'Desenvolvi aplicações .NET para rastreabilidade de produção e parametrização configurável de linhas de produção, utilizando WPF/MVVM, SQL Server, stored procedures e configurações baseadas em JSON, permitindo atualizar parâmetros de produção sem recompilar ou voltar a instalar o software.',
           'Criei aplicações de visão artificial com MVTec HALCON, .NET WinUI, Entity Framework e SQL Server para inspeção de qualidade automática, com bibliotecas Halcon reutilizáveis em NuGet e executadas como serviços Windows.',
           'Desenvolvi aplicações de automação com Beckhoff TwinCAT 3 e integrei equipamentos industriais através de CAN, Ethernet e MQTT.',
           'Migrei arquiteturas de segurança industrial de ABB Pluto para Beckhoff TwinSAFE, configurando módulos de I/O de segurança e relés de segurança.',
