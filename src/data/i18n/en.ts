@@ -32,7 +32,7 @@ export const en = {
         bullets: [
           'Led the modernization of legacy industrial desktop applications towards a web-based architecture with Angular, ASP.NET Core and Entity Framework Core, keeping integration with machine vision, traceability databases and production equipment.',
            'Took part in the development, commissioning, validation and support of automated automotive production lines (including Mercedes-Benz), integrating vision systems, PLCs, test equipment and traceability databases.',
-           'Developed .NET (WPF/MVVM) applications for manufacturing traceability and configurable production-line parameterization with SQL Server, stored procedures and JSON, avoiding recompilation for production changes.',
+           'Developed .NET applications for manufacturing traceability and configurable production-line parameterization using WPF/MVVM, SQL Server, stored procedures and JSON-based configurations, enabling production settings to be updated without recompiling or redeploying the software.',
           'Built machine vision applications with MVTec HALCON, .NET WinUI, Entity Framework and SQL Server for automated quality inspection, with reusable Halcon libraries packaged as NuGet and deployed as Windows services.',
           'Developed Beckhoff TwinCAT 3 automation applications and integrated industrial equipment through CAN, Ethernet and MQTT.',
           'Migrated industrial safety architectures from ABB Pluto to Beckhoff TwinSAFE, configuring safety I/O modules and safety relays.',
