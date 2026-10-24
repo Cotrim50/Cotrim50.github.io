@@ -4,14 +4,14 @@ export const pt: Dict = {
   lang: 'pt',
   htmlLang: 'pt-PT',
   meta: {
-    title: 'José Cotrim — Engenheiro de Automação e Software',
+    title: 'José Cotrim — Engenheiro de Automação',
     description:
       'Engenheiro de software .NET que liga TI ao chão de fábrica: C#, WPF, SQL Server, visão industrial e integração de PLCs.',
   },
   nav: { about: 'Sobre', experience: 'Experiência', skills: 'Competências', education: 'Formação', certificates: 'Certificados', projects: 'Projetos', contact: 'Contacto', menu: 'Menu', switchLabel: 'English', switchAria: 'Switch to English' },
   hero: {
     greeting: 'Olá, sou o',
-    role: 'Engenheiro de Automação e Software',
+    role: 'Engenheiro de Automação',
     tagline: 'Do código de PLC às aplicações .NET: desenvolvo o software que faz funcionar e liga a linha de produção.',
     location: 'Vila do Conde, Porto',
     cv: 'Descarregar CV',
@@ -28,7 +28,7 @@ export const pt: Dict = {
     title: 'Experiência',
     items: [
       {
-        role: 'Engenheiro de Automação e Software',
+        role: 'Engenheiro de Automação',
         company: 'Preh, Trofa',
         period: 'Nov 2025 – Presente',
         bullets: [
