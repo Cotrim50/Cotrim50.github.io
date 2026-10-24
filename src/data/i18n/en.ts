@@ -2,14 +2,14 @@ export const en = {
   lang: 'en',
   htmlLang: 'en',
   meta: {
-    title: 'José Cotrim — Automation & Software Engineer',
+    title: 'José Cotrim — Automation Engineer',
     description:
       '.NET software engineer bridging IT and the factory floor: C#, WPF, SQL Server, machine vision and PLC integration.',
   },
   nav: { about: 'About', experience: 'Experience', skills: 'Skills', education: 'Education', certificates: 'Certificates', projects: 'Projects', contact: 'Contact', menu: 'Menu', switchLabel: 'Português', switchAria: 'Mudar para Português' },
   hero: {
     greeting: "Hi, I'm",
-    role: 'Automation & Software Engineer',
+    role: 'Automation Engineer',
     tagline: 'From PLC code to .NET applications: I build the software that runs and connects the production line.',
     location: 'Vila do Conde, Porto',
     cv: 'Download CV',
@@ -26,7 +26,7 @@ export const en = {
     title: 'Experience',
     items: [
       {
-        role: 'Automation & Software Engineer',
+        role: 'Automation Engineer',
         company: 'Preh, Trofa',
         period: 'Nov 2025 – Present',
         bullets: [
